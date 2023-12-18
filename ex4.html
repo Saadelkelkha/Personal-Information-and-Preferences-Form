@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Adding styles to enhance visual presentation -->
+    <style>
+        fieldset{
+            border-radius: 10px;
+        }
+        textarea{
+            width: 500px;
+            height: 60px;
+        }
+        #d{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- First form for personal information -->
+    <form>
+        <fieldset>
+            <legend><b>Vos coordonnees</b></legend>
+            <!-- Input fields for name, prename, date of birth, email, site, password, gender, and country -->
+            <label for="name">Nom :</label>
+            <input id="name" placeholder="votre nom"><br>
+            <label for="prename">Prenom :</label>
+            <input id="prename" placeholder="votre prenom"><br>
+            <label for="dat">Date de naissance :</label>
+            <input id="dat" type="date"><br>
+            <label for="mail">Mail :</label>
+            <input id="mail" type="email" placeholder="votre mail"><br>
+            <label for="site">Votre site :</label>
+            <input id="site" type="url"><br>
+            <label for="code">Code :</label>
+            <input id="code" type="password"><br>
+            <!-- Radio buttons for gender selection -->
+            <label for="genre">Genre :</label>
+            <input id="genre" name="gender" type="radio">
+            <label for="male">homme</label>
+            <input id="genre" name="gender" type="radio">
+            <label for="female">femme</label><br>
+            <!-- Dropdown menu for country selection -->
+            <label for="pay">Pays</label>
+            <select id="pay">
+                <option value="votrepay">Votre pays</option>
+                <option value="maroc">Maroc</option>
+            </select>
+        </fieldset>
+    </form>
+
+    <!-- Second form for taste preferences -->
+    <form>
+        <fieldset>
+            <legend><b>Vos gouts</b></legend>
+            <!-- Checkboxes for taste preferences and a textarea for detailed description -->
+            <input id="che" type="checkbox">
+            <label for="che">Tarte aux fraises a la creme d'amandes</label><br>
+            <input id="ch1" type="checkbox">
+            <label for="ch1">Tarte aux prunes</label><br>
+            <input id="ch2" type="checkbox">
+            <label for="ch2">Tarte rustique</label><br>
+            <textarea placeholder="Decriver vos gouts en detail"></textarea>
+        </fieldset>
+    </form>
+
+    <!-- Third form for photo submission -->
+    <form>
+        <fieldset>
+            <legend><b>Envoyez nous votre photo</b></legend>
+            <!-- Input field for file upload and reset/submit buttons -->
+            <input type="file" id="file" required><br>
+            <br>
+            <input type="reset" placeholder="Effacer">
+            <input type="submit" placeholder="Envoyez" id="d">
+        </fieldset>
+    </form>
+</body>
+</html>
